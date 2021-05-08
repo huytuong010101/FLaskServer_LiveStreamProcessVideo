@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>NSFW</title>
+    <link rel="icon" type="image/png" href="https://ftech.ai/images/favicon.png">
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+	 crossorigin="anonymous">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="container mt-3 bg-info text-center position-relative">
+        <div class="position-absolute content-header">
+            <div>
+                <img src="https://ftech.ai/images/logo2.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-primary">NSFW PROJECT</h2>
+            </div>
+            <div>
+                <p class="font-monospace">From Computer Vision Team</p>
+            </div>
+        </div>
+    </header>
+	<section class="container mt-3">
+		<form action="">
+            <div class="row mb-3">
+                <label for="image-file" class="col-sm-2 col-form-label">Select image</label>
+                <div class="col-sm-8">
+                <input class="form-control" type="file" accept="image/*" id="image-file">
+                </div>
+              <button type="button" class="btn btn-success col-sm-2" id="btn-upload-image">Upload</button>
+            </div>
+            <div class="row mb-3">
+                <label for="video-url" class="col-sm-2 col-form-label">Stream video</label>
+                <div class="col-sm-8">
+                <input class="form-control" type="url" id="video-url">
+                </div>
+              <button type="button" class="btn btn-danger col-sm-2" id="btn-stream-video">Stream</button>
+            </div>
+        </form>
+    </section>
+    <!--Modal image-->
+    <div id="modal-image" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen mt-5 ml-5 mr-5">
+            <div class="content row">
+                <div class="col text-center">
+                   <img class="src-image img-fluid" src="https://static1.bestie.vn/Mlog/ImageContent/202102/17-cach-chup-anh-dep-van-nguoi-me-2021-0a87f2.jpg" alt="">
+                </div>
+                <div class="col text-center">
+                   <img class="result-image img-fluid" src="https://static1.bestie.vn/Mlog/ImageContent/202102/17-cach-chup-anh-dep-van-nguoi-me-2021-0a87f2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal video-->
+    <div id="modal-video" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen mt-5 ml-5 mr-5">
+            <div class="content row">
+                <div class="col text-center">
+                   <img class="origin-video img-fluid" src="" alt="">
+                </div>
+                <div class="col text-center">
+                   <img class="result-video img-fluid" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
