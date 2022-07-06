@@ -1,4 +1,4 @@
-# Flask Server using to test Image Processing & Video processing Syste
+# Flask Server using to test Image Processing & Video processing System
 ## How to run ? 
 ### Install dependency
 ```
